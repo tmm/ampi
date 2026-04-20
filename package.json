@@ -1,0 +1,42 @@
+{
+  "name": "ampi",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "pi": {
+    "extensions": [
+      "./ampi.ts"
+    ]
+  },
+  "dependencies": {
+    "@sourcegraph/amp-sdk": "^0.1.0-20260417202059-gb917b0e"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-ai": "0.67.6",
+    "@mariozechner/pi-coding-agent": "0.67.6"
+  },
+  "peerDependenciesMeta": {
+    "@mariozechner/pi-ai": {
+      "optional": true
+    },
+    "@mariozechner/pi-coding-agent": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@mariozechner/pi-ai": "^0.67.6",
+    "@mariozechner/pi-coding-agent": "^0.67.6",
+    "typescript": "^6.0.3"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^24.5.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@10.22.0"
+}
